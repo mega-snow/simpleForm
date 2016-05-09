@@ -3,10 +3,10 @@
   -moz-box-sizing: border-box; }
 
 body {
-  margin: 20px;
+  margin: 2px 0  0  12px;
   font-size: 14px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  color: #555; }
+  font-family:  Verdana,Arial,Sans-serif;
+  color: #4a4a4a; }
 
 .hide {
   display: none; }
@@ -24,7 +24,10 @@ pre {
   background: none; }
 
 input, button {
-  height: 35px;
+  height: 43px;
+
+  top: 14px;
+  position: relative;
   margin: 0;
   padding: 6px 12px;
   border-radius: 4px;
@@ -36,7 +39,7 @@ input, button {
 
 input, select {
   border: 1px solid #CCC;
-  width: 250px; }
+  width: 370px; }
 
 ::-webkit-input-placeholder {
   color: #BBB; }
@@ -62,17 +65,17 @@ button {
   margin-bottom: 100px; }
 
 #tags:hover{
-  
+
 }
 
-input:focus{
+#content input:focus{
   border: 1px solid #0880fd;
 }
 
 
 
 .formLabel{
-  color:#d0d0d0;
+  color:#a1a1a1;
 }
 .row{
   display: table-row;
@@ -82,12 +85,47 @@ input:focus{
 }
 
 #name, #lastname{
-  width: 120px;
+  width: 180px;
   margin-right: 10px;
+  color: #505151;
+  font-size: 16px;
 }
 
-p{
-  margin:20px 00px 10px 0px;
+
+input:focus { outline: none; }
+
+#content{
+  width: 370px;
+  /*border: 1px solid black;*/
+  margin-left:0px;
 }
 
- input:focus { outline: none; }
+#content p{
+  margin:20px 0px 10px 0px;
+}
+
+.rowLine {
+  padding-top:6px;
+}
+
+
+.titleForm{
+  font-size: 17.5px;
+  width: 100%;
+  text-align: center;
+  margin:14px 0px 22px 0px !important;
+  <!--letter-spacing: 5px; -->
+}
+
+.ui-widget-content {
+    background: #fff !important;
+    color: #333 !important;
+    border-radius: 0px 0px 4px 4px !important;
+    border-left: 1px solid #CCCCCC !important ;
+    border-bottom: 1px solid #CCCCCC !important;
+    border-right: 1px solid #CCCCCC !important;
+    margin-top: -4px;
+
+    z-index: -2 !important;
+    display: block !important;
+  }

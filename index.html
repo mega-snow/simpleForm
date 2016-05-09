@@ -6,25 +6,32 @@
     <link rel="stylesheet" href="./css/demo.css">
     <link type="text/css" href="./css/jquery-ui.min.css" rel="stylesheet" />
   </head>
-  <body>    
-  <div class='row'>
-    <div class='cell'>
-       <p class='formLabel'>ИМЯ</p>
-       <input id="name" >
+  <body>
+  <div id='content'>
+    <p class='titleForm'><b>Зарегистрируйтесь</b> и начните продавать<br>услуги через интернет сегодня</p>
+
+    <div class='row rowLine'>
+      <div class='cell'>
+         <p class='formLabel'>ИМЯ</p>
+         <input id="name" value='Сергей' >
+      </div>
+      <div class='cell'>
+        <p class='formLabel'>ФАМИЛИЯ</p>
+        <input id="lastname" value='Миргород' >
+      </div>
     </div>
-    <div class='cell'>
-      <p class='formLabel'>ФАМИЛИЯ</p>
-      <input id="lastname" >
+
+    <div class="ui-widget rowLine">
+         <p class='formLabel'>ПРОФЕССИЯ</p>
+         <input id="tags" type="text" />
     </div>
+
+    <!-- <div class="rowLine" >
+        <p id="output" class='formLabel'>ТЕЛЕФОН</p>
+        <input id="phone" type="tel">
+    </div> -->
   </div>
-  <div class="ui-widget">    
-       <p class='formLabel'>ПРОФЕССИЯ</p>
-       <input id="tags" type="text" />
-  </div>
-  <div class="" >
-      <p id="output" class='formLabel'>ТЕЛЕФОН</p>
-      <input id="phone" type="tel">
-  </div>  
+
   <script src="./js/jquery.min.js"></script>
   <script src="./js/intlTelInput.js"></script>
   <script src="./js/demo.js"></script>
