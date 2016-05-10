@@ -3,9 +3,9 @@
   -moz-box-sizing: border-box; }
 
 body {
-  margin: 2px 0  0  12px;
+  margin: 2px 0  0  15px;
   font-size: 14px;
-  font-family:  Verdana,Arial,Sans-serif;
+  font-family:  helvetica,Verdana,Arial,Sans-serif;
   color: #4a4a4a; }
 
 .hide {
@@ -24,7 +24,7 @@ pre {
   background: none; }
 
 input, button {
-  height: 43px;
+  height: 44px;
 
   top: 14px;
   position: relative;
@@ -32,14 +32,16 @@ input, button {
   padding: 6px 12px;
   border-radius: 4px;
   font-family: inherit;
-  font-size: 100%;
+  
   color: inherit; }
   input[disabled], button[disabled] {
     background-color: #eee; }
 
 input, select {
   border: 1px solid #CCC;
-  width: 370px; }
+  width: 370px; 
+  font-size:16px;
+}
 
 ::-webkit-input-placeholder {
   color: #BBB; }
@@ -64,7 +66,10 @@ button {
 #result {
   margin-bottom: 100px; }
 
-#tags:hover{
+
+#tags{
+  z-index: 1 !important;
+  font-size: 16px !important;
 
 }
 
@@ -101,22 +106,26 @@ input:focus { outline: none; }
 }
 
 #content p{
-  margin:20px 0px 10px 0px;
+      margin: 23px 0px -2px 0px;
+      font-size: 14px;
 }
 
 .rowLine {
-  padding-top:6px;
+  padding-top:13px;
 }
 
 
 .titleForm{
-  font-size: 17.5px;
+  font-size: 16px;
   width: 100%;
   text-align: center;
-  margin:14px 0px 22px 0px !important;
-  <!--letter-spacing: 5px; -->
+  margin:15px 0px 26px 0px !important;
+  letter-spacing: 0px; 
 }
 
+.ui-widget{
+  padding-top: 14px !important;
+}
 .ui-widget-content {
     background: #fff !important;
     color: #333 !important;
@@ -126,6 +135,37 @@ input:focus { outline: none; }
     border-right: 1px solid #CCCCCC !important;
     margin-top: -4px;
 
-    z-index: -2 !important;
-    display: block !important;
+    z-index: 0 !important;
+    /*display: block !important;*/
+  }
+
+  .ui-menu .ui-menu-item:first-child {
+        padding: 8px 1em 10px .4em !important;
+  }
+  .ui-menu .ui-menu-item:last-child {
+        padding-bottom: 20px !important;
+  }
+
+  .ui-menu .ui-menu-item {
+        font-size: 16px !important;
+        padding: 10px 1em 10px .4em !important;
+  }
+
+  .intl-tel-input .selected-flag {
+    height: 41px !important;
+  }
+
+  .intl-tel-input .flag-dropdown {
+    height: 41px !important;
+    margin-top: 15px !important;
+  }
+
+  .btn{
+    height:41px;
+    border-radius: 4px;
+    background-color: #0880fd;
+    color: #FFFFFF;
+    padding:  15px;
+    font-size: 14px;
+    min-width: 192px;
   }
